@@ -12,10 +12,15 @@ console.log ('JS OK');
 *********************/
 
 
-  // Indentificare l'elemento nel DOM
+  // Indentifico l'elemento nel DOM dove inserire la password
 
   const passwordPlaceholder = document.getElementById('user-password');
   console.log(passwordPlaceholder);
+
+  // Indentifico l'elemento nel DOM dove inserire il saluto
+  
+  const greetingsPlaceholder = document.getElementById('user-greeting');
+  console.log(greetingsPlaceholder);
 
   // Definisco il valore numerico della password da sommare ai dati dell'utente
 
@@ -27,19 +32,24 @@ console.log ('JS OK');
   
   // Chiedo all'utente il suo nome e creo una variabile con il suo nome
 
-  const userName = prompt('Come ti chiami ?' , 'michael');
+  const userName = prompt('Come ti chiami ?' , 'Michael');
   console.log(userName);
+
 
   // Chiedo all'utente il suo cognome e creo una variabile con il suo cognome
   
-  const userSurname = prompt('Qual è il tuo cognome ?' , 'mantovani');
+  const userSurname = prompt('Qual è il tuo cognome ?' , 'Mantovani');
   console.log(userSurname);
   
   // Chiedo all'utente il suo colore preferito e creo una variabile con il suo colore preferito
   
-  const userFavoriteColor = prompt('Qual è il tuo colore preferito ?' , 'viola');
+  const userFavoriteColor = prompt('Qual è il tuo colore preferito ?' , 'Viola');
   console.log(userFavoriteColor);
 
+
+  //  Costruisco un saluto con la variabile userName e la inserisco nel DOM
+
+  greetingsPlaceholder.innerText = userName;
 
   // Sommo le varibili del nome, del cognome, del colore preferito e del valore numerico predefinito
 
@@ -48,7 +58,6 @@ console.log ('JS OK');
 
 
   // Inserisco la password nell'elemento identificato nel DOM precedentemente
-  const passwordBold = `<strong>${userPassword}</strong>`;
-  passwordPlaceholder.innerHTML = passwordBold;
+  passwordPlaceholder.innerHTML = userPassword;
 
 

@@ -1,0 +1,27 @@
+
+
+/* GENERICS */
+
+body{
+  text-align: center;
+}
+
+
+div{
+  padding: 10px 0 ;
+}
+
+#user-greeting{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+#user-password{
+  text-transform: lowercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
