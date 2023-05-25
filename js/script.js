@@ -17,7 +17,17 @@ console.log ('JS OK');
   const passwordPlaceholder = document.getElementById('user-password');
   console.log(passwordPlaceholder);
 
+  // Definisco il valore numerico della password da sommare ai dati dell'utente
 
+  const passwordClosing = '21';
+  console.log(passwordClosing);
+
+
+  
+  
+  
+  
+  
   // Chiedo all'utente il suo nome e creo una variabile con il suo nome
 
   const userName = prompt('Come ti chiami ?' , 'Michael');
